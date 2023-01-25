@@ -586,15 +586,19 @@ footer{
     }
     .faqs-btn{
         align-items: center;
-        width: 95vw;
+        width: 100vw;
         text-align: start;
         font-size: var(--text-m);
     }
     .inner-faqs{
-        width: 95vw;
+        width: 100vw;
         font-size: var(--text-m);
     }
     .svg-closed{
         width: 20px;
+    }
+    footer{
+        padding: 12px 12px;
+        margin: 44px 44px 44px 0;
     }
 }
