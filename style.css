@@ -7,7 +7,7 @@
 }
 :root{
     --primary-color: #e50914;
-    --text-xxl: 2.8rem;
+    --text-xxl: 2.5rem;
     --text-xl: 2rem;
     --text-l: 1.5rem;
     --text-m: 1.2rem;
@@ -24,7 +24,6 @@ body{
     color: #fff;
     background: #000;
     -webkit-font-smoothing: antialiased;
-    /* overflow-x: hidden; */
 
 }
 /* utility class */
@@ -110,7 +109,7 @@ p{
     top: 0;
     left: 0;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     z-index: 1;
     border-bottom: var(--border-btm);
 } 
@@ -122,7 +121,7 @@ p{
     position: absolute;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background: rgba(0, 0, 0, .6);
     box-shadow: inset 120px 110px 250px #000, inset -120px -110px 250px #000;
@@ -322,9 +321,12 @@ p{
     margin: 1px 12px;
     padding: 12px 24px;
     display: none;
+    
 }
 .showData{
     display: flex;
+    
+
     /* color: red; */
 }
 .subcribe{
@@ -370,7 +372,7 @@ footer{
         min-height: 58vh;
     }
     h1{
-        font-size: var(--text-xl);
+        font-size: var(--text-xxl);
 
     }
     p{
@@ -405,12 +407,12 @@ footer{
     .girl-img img {
         max-width: 56vw;
         /* margin-bottom: 4em; */
-        transform: translateX(40%);
+        transform: translateX(28%);
         margin-bottom: 0;
     }
     .girl-img-box {
         bottom: 10%;
-        transform: translateX(89%);
+        transform: translateX(74%);
         width: 36vw;
         min-height: 0;
     }
@@ -421,7 +423,7 @@ footer{
 
 
     .main-section .section-1 {
-        width: 100vw;
+        width: 100%;
         text-align: center;
     }
     #download-img {
@@ -464,6 +466,9 @@ footer{
         margin-top: 4vh;
         text-align: center;
     }
+    .inner-faqs{
+        width: 87vw;
+    }
     .faqs-btn {
         width: 87vw;
         align-items: center;
@@ -471,13 +476,29 @@ footer{
     }
     .my-form input {
         width: 43vw;
+        display: block;
+        margin: auto;
     }
     .my-form button {
-        width: 20vw;
+        width: 16vw;
+        height: 7vh;
+        display: block;
+        margin: 10px auto 0 auto;
     }
 
     .footer-content{
         grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width:777px){
+    .showcase .section-2 {
+        width: 80vw;
+    }
+    .my-form input{
+        width: 65vw;
+    }
+    .my-form button{
+        width: 20vw;
     }
 }
 @media (max-width:588px){
@@ -486,9 +507,94 @@ footer{
         margin-bottom: 3px;
     }
     .my-form button {
-        width: 23vw;
+        width: 25vw;
     }
     .footer-content{
         grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width:460px){
+    h1{
+        font-size: var(--text-xl);
+    }
+    .main-header .section-1 img{
+        width: 7em;
+    }
+    .main-header-btn select {
+        padding: 9px 11px;
+        margin-right: 7px;
+        font-size: .7rem;
+    }
+    .main-header-btn button {
+        padding: 8px 8px;
+        font-size: 1rem;
+    }
+    .showcase .section-2 {
+        width: 95%;
+        margin: 17vh auto;
+    }
+    .my-form{
+        margin-top: 12px;
+    }
+    .my-form input{
+        width: 76vw;
+    }
+    .my-form button{
+        width: 35%;
+    }
+
+    .container-2{
+        width: 95%;
+    }
+
+    .main-section .video-Box .video img {
+        width: 93vw;
+    }
+    .main-section .video-Box .video .video-inside {
+        top: 20%;
+        right: 14.3%;
+    }
+    .main-section .video-Box .video .video-playBack {
+        width: 67.5vw;
+    }
+
+    .girl-img img {
+        max-width: 87vw;
+        transform: translateX(0%);
+    }
+    .girl-img-box{
+        transform: translateX(31%);
+        width: 54vw;
+    }
+    .girl-img-box img{
+        transform: translateX(-8px);
+        width: 11vw;
+    }
+    .download-para {
+        margin-left: 2px;
+    }
+    .download-para p {
+        font-size: 3.4vw;
+    }
+    #download-img {
+        transform: translateX(22%);
+        width: 11vw;
+    }
+    #child-Box .section-1 img {
+        width: 94vw;
+    }
+    .faqs-btn{
+        align-items: center;
+        width: 95vw;
+        text-align: start;
+        font-size: var(--text-m);
+    }
+    .inner-faqs{
+        width: 95vw;
+        font-size: var(--text-m);
+    }
+    .svg-closed{
+        width: 20px;
     }
 }
