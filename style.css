@@ -136,7 +136,7 @@ p{
     background: transparent;
     outline: none;
     border: 0.5px solid #ccc;
-    border-radius: 10px 0px 0px 10px;
+    border-radius: 3px 0px 0px 3px;
     box-shadow: 0 0 10px rgba(0,0,0, .3);
     color: white;
 }
@@ -484,6 +484,7 @@ footer{
         width: 43vw;
         display: block;
         margin: auto;
+        border-radius: 3px;
     }
     .my-form button {
         width: 16vw;
